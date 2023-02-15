@@ -1,41 +1,37 @@
-*{
-  font-family: Rajdhani,"Trebuchet MS";
+* {
+  font-family: Rajdhani, "Trebuchet MS";
   font-weight: 700;
   text-transform: capitalize;
+  scroll-behavior: smooth;
 }
-.list ul a{
+.list ul a {
   list-style-type: none;
   text-decoration: none;
   color: rgb(241, 237, 237);
 }
-.list > ul> li>  a:hover{
+.list > ul > li > a:hover {
   color: yellow;
 }
 
 .list ul li {
   display: inline;
 }
-.ml-5{
+.ml-5 {
   margin-left: 180px;
-
-}  
-.ml-3{
+}
+.ml-3 {
   margin-left: 50px;
 }
- 
+
 /* flip card */
 
 .containers {
   position: relative;
   width: 100%;
   border-radius: 15px;
-
 }
-/* 
-.images {
-  display: block;
-  width: 200px; */
-  
+
+
 /* } */
 
 .overlays {
@@ -45,9 +41,9 @@
   right: 0;
   background-color: #576481;
   overflow: hidden;
-  width:0;
+  width: 0;
   height: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0.8;
   border-radius: 15px;
 }
@@ -68,213 +64,241 @@
   transform: translate(-50%, -50%);
   white-space: nowrap;
 }
-.flex{
+.flex {
   display: flex;
 }
-.justify-between{
+.justify-between {
   justify-content: space-between;
 }
- .fs-lg{
+.fs-lg {
   font-size: 100px;
- }
- 
- .bg{
+}
+
+.bg {
   background-color: #f77429;
   opacity: 0.3;
- }
- .opacity{
+}
+.opacity {
   opacity: 0.1;
   width: 100%;
   height: 600px;
- }
- .height{
-  
+}
+.height {
   border-bottom-right-radius: 20px;
   position: relative;
   /* background-image: url(../src/images/WhatsApp\ Image\ 2023-01-20\ at\ 5.10.52\ PM.jpeg); */
- }
- .overlay1{
+}
+.overlay1 {
   position: absolute;
-  top: 150px;
-  left: 100px;
- }
- .overlay1 > ul > li{
+  top: 20%;
+  left: 10%;
+}
+.overlay1 > ul > li {
   list-style-type: none;
- }
- .headerimg  img{
+}
+.headerimg img {
   width: 150px;
   padding: 5px;
-
- }
- .width{
+}
+.width {
   width: 100%;
   border-radius: 15px;
- }
- .around{
+}
+.around {
   justify-content: space-around;
- }
- .mr-1{
+}
+.mr-1 {
   margin-right: 10px;
- }
- .formwidth{
+}
+.formwidth {
   width: 100%;
   padding: 15px;
   border-radius: 10px;
 }
+.formwidth1 {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+}
+.zoom{
+  overflow: hidden;
+}
+
+.zoom img {
+  overflow: hidden;
+  transition: transform ease-in-out 0.3s;
+
+}
+
+.zoom:hover img {
+  transform: scale(1.5);
   
+  overflow: hidden;
+}
+.sticky {
+  position: sticky;
+  bottom: 20px;
+  left: 1250px;
+}
+/* ------------------------------------- */
+.packers h2 {
+  font-family: Rajdhani, "Trebuchet MS";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 46px;
+  letter-spacing: 0;
+  color: black;
+  text-transform: none;
+  font-style: normal;
+  margin-top: 20px;
+}
+.packers span {
+  font-family: Rajdhani, "Trebuchet MS";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 46px;
+  letter-spacing: 0;
+  color: blue;
+  text-transform: none;
+  font-style: normal;
+}
+.packers ul li {
+  list-style-type: none;
+}
+.packers p {
+  color: #abb8c3;
+  margin-top: 20px;
+  text-align: left;
+  margin-bottom: 30px;
+  line-height: 2;
+}
+.flow {
+  overflow: hidden;
+}
+.image-fluid {
+  width: 100%;
+}
+.bg-whatsapp {
+  background-color: rgb(14, 175, 14);
+}
+.button2 {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #25d366;
+
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+.button2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.button2:hover {
+  color: #e8e8e8;
+}
+
+.button2:hover::before {
+  width: 100%;
+}
+
+/* Header    */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: left;
+  /* background-color: #04AA6D; */
+  color: white;
+}
+
+.listyle {
+  list-style-type: none;
+  text-decoration: none;
+  color: rgb(241, 237, 237);
+}
+
+.listyle:hover {
+  color: #61dafb;
+  cursor: pointer;
+}
+.socials a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.boxshadow {
+  box-shadow: 15px 15px 15px rgb(173, 167, 167);
+}
+
+.mr-2 {
+  margin-right: 20px;
+}
+/* ------------------------------------------- */
+.width100 {
+  width: 100%;
+}
+
+.card1{
   
-  .zoom{
-    overflow: hidden;
-  }
-    
-    
-    
-    
-  
-  .zoom:hover  img{
-    
-    opacity: 0.5;
-    transform: scale(1.5);
-    transition: ease-in-out 0.3s;
-    overflow: hidden;
-    
-  }
-  .sticky{
-    position: sticky;
-    bottom: 20px;
-    left: 1250px;
-  }
-  /* ------------------------------------- */
-  .packers h2{
-    font-family: Rajdhani,"Trebuchet MS";
-      font-weight: 700;
-      font-size: 42px;
-      line-height: 46px;
-      letter-spacing: 0;
-      color: black;
-      text-transform: none;
-      font-style: normal;
-      margin-top: 20px;
-  }
-  .packers span{
-    font-family: Rajdhani,"Trebuchet MS";
-      font-weight: 700;
-      font-size: 42px;
-      line-height: 46px;
-      letter-spacing: 0;
-      color: blue;
-      text-transform: none;
-      font-style: normal;
-  }
-  .packers ul li{
-    list-style-type: none;
-  }
-  .packers p{
-    color: #abb8c3;
-    margin-top: 20px;
-    text-align: left;
-    margin-bottom:30px;
-    line-height: 2;
-  }
-  .flow{
-    overflow: hidden;
-  }
-  .image-fluid{
-    width: 100%;
-  }
-  .bg-whatsapp{
-    background-color: rgb(14, 175, 14);
-  
-  
-  }
-  .button2 {
-    padding: 15px 25px;
-    border: unset;
-    border-radius: 15px;
-    color: #212121;
-    z-index: 1;
-    background: #25D366;
-    
-    font-weight: 1000;
-    font-size: 17px;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms;
-    overflow: hidden;
-   }
-   
-   .button2::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 15px;
-    background-color: #212121;
-    z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms
-   }
-   
-   .button2:hover {
-    color: #e8e8e8;
-   }
-   
-   .button2:hover::before {
-    width: 100%;
-   }
+  transition: transform 0.6s;
+}
+
+.card1:hover{
+transform: scale(1.1);
+}
 
 
-   /* Header    */
-   .topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Create a right-aligned (split) link inside the navigation bar */
-  .topnav a.split {
-    float: left;
-    /* background-color: #04AA6D; */
-    color: white;
-  }
-
-  .listyle{
-    list-style-type: none;
-    text-decoration: none;
-    color: rgb(241, 237, 237);
-  
-  }
- 
-    
-  .listyle:hover{
-    color: #61dafb;
-    cursor: pointer;
-  
-  }
-  .socials a{
-    
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-    
+.text-justify{
+  text-align: justify;
+}
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+.w-50{
+  width: 50%;
+}
+.mr-3{
+  margin-right: 60px;
+}
